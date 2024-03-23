@@ -1,0 +1,75 @@
+body {
+  background: #005DFF;
+}
+
+.button {
+  font-size: 3.75rem;
+  color: #005DFF;
+  width: 37.6875rem;
+  height: 37.5rem;
+  border-radius: 1.4375rem;
+  background: rgb(20, 0, 0);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.button:hover {
+  background: #001333;
+  color: orange;
+  opacity: 1.4375rem;
+}
+
+.button::before {
+  content: "";
+  top: 0;
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: 0;
+  border-top: 0.125rem solid whitesmoke;
+  border-right: 0.19rem solid whitesmoke;
+  animation: border-top-right 3s infinite alternate;
+}
+
+.button::after {
+  content: "";
+  right: 0;
+  bottom: 0;
+  height: 0;
+  position: absolute;
+  left: 0;
+  border-bottom: 0.125rem solid whitesmoke;
+  border-left: 0.19rem solid whitesmoke;
+  animation: border-bottom 3s infinite alternate;
+}
+
+@keyframes border-top-right {
+  0% {
+    width: 0;
+    height: 0;
+  }
+  50% {
+    width: 37.5rem;
+    height: 0rem;
+  }
+  100% {
+    width: 37.5rem;
+    height: 3rem;
+  }
+}
+@keyframes border-bottom-left {
+  0% {
+    width: 0;
+    height: 0;
+  }
+  50% {
+    width: 37.5rem;
+    height: 0rem;
+  }
+  100% {
+    width: 37.5rem;
+    height: 3rem;
+  }
+}/*# sourceMappingURL=style.css.map */

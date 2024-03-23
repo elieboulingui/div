@@ -1,0 +1,31 @@
+@use"function" as *;
+@mixin displa{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+@mixin before{
+    content: "";
+    top: 0;
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: 0;
+    border-top: rem(2) solid whitesmoke;
+    border-right:0.19rem solid whitesmoke;
+    animation: border-top-right 3s infinite alternate;
+}
+@mixin after{
+    content: "";
+    right: 0;
+    bottom: 0;
+    height: 0;
+    position: absolute;
+    left: 0;
+    border-bottom: rem(2) solid whitesmoke;
+    border-left:0.19rem solid whitesmoke;
+    animation: border-bottom 3s infinite alternate;
+}
+
